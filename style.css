@@ -19,16 +19,45 @@ body {
   position: absolute;
 }
 
-.layer-1 { z-index: 1 }
-.layer-2 { z-index: 2 }
-.layer-3 { z-index: 3 }
-.layer-4 { z-index: 4 }
-.layer-5 { z-index: 5 }
-.layer-6 { z-index: 6 }
-.layer-7 { z-index: 7 }
-.layer-8 { z-index: 8 }
-.layer-9 { z-index: 9 }
-.layer-10 { z-index: 10 }
+.layer-1 {
+  z-index: 1
+}
+
+.layer-2 {
+  z-index: 2
+}
+
+.layer-3 {
+  z-index: 3
+}
+
+.layer-4 {
+  z-index: 4
+}
+
+.layer-5 {
+  z-index: 5
+}
+
+.layer-6 {
+  z-index: 6
+}
+
+.layer-7 {
+  z-index: 7
+}
+
+.layer-8 {
+  z-index: 8
+}
+
+.layer-9 {
+  z-index: 9
+}
+
+.layer-10 {
+  z-index: 10
+}
 
 .layer-1 {
   height: 450px;
@@ -36,7 +65,6 @@ body {
   background-color: white;
   bottom: 0;
   right: 60px;
-  border-radius: 50px;
 }
 
 .layer-2 {
@@ -45,7 +73,6 @@ body {
   background-color: white;
   bottom: 0;
   left: 60px;
-  border-radius: 50px;
 }
 
 .layer-3 {
@@ -65,7 +92,6 @@ body {
   background-color: white;
   bottom: 0;
   left: 45px;
-  border-radius: 50px;
 }
 
 .layer-5 {
@@ -75,7 +101,6 @@ body {
   bottom: 0;
   left: 0;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-  border-radius: 0 0 0 24px;
 }
 
 .layer-6 {
@@ -84,7 +109,6 @@ body {
   background-color: white;
   bottom: 0;
   right: 25px;
-  border-radius: 50px;
 }
 
 .layer-7 {
@@ -94,7 +118,6 @@ body {
   bottom: 0;
   right: 0;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-  border-radius: 0 0 24px 0;
 }
 
 .layer-8 {
@@ -115,7 +138,6 @@ body {
   bottom: 0;
   left: 0;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-  border-radius: 0 0 0 24px;
 }
 
 .layer-10 {
@@ -125,7 +147,87 @@ body {
   bottom: 0;
   right: 0;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-  border-radius: 0 0 24px 0;
+}
+
+.ear {
+  height: 30px;
+  width: 30px;
+  background-color: #4d4d4d;
+  border-radius: 40px 40px 20px 20px;
+  position: absolute;
+}
+
+.left-ear {
+  left: 4px;
+  top: 10px;
+}
+
+.right-ear {
+  right: 4px;
+  top: 10px;
+}
+
+.head {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #4d4d4d;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  top: 15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.eye-container {
+  background-color: #4d4d4d;
+  height: 16px;
+  width: 12px;
+  position: absolute;
+  border-radius: 50% 50% 40% 40%;
+}
+
+.left-eye-container {
+  top: 10px;
+  left: 15px;
+  transform: rotate(30deg);
+}
+
+.right-eye-container {
+  top: 10px;
+  right: 15px;
+  transform: rotate(-30deg);
+}
+
+.eye {
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50% 50% 40% 40%;
+  position: absolute;
+}
+
+.left-eye {
+  top: 2px;
+  left: 1.8px;
+}
+
+.right-eye {
+  top: 2px;
+  left: 2px;
+}
+
+.nose {
+  height: 6px;
+  width: 9px;
+  background-color: black;
+  border-radius: 80% 80% 80% 80%;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 @media (min-width: 1024px) {
