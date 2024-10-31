@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #ccefff;
+  z-index: 20;
+}
+
+.layer {
+  position: absolute;
+}
+
+.layer-1 { z-index: 1 }
+.layer-2 { z-index: 2 }
+.layer-3 { z-index: 3 }
+.layer-4 { z-index: 4 }
+.layer-5 { z-index: 5 }
+.layer-6 { z-index: 6 }
+.layer-7 { z-index: 7 }
+.layer-8 { z-index: 8 }
+.layer-9 { z-index: 9 }
+.layer-10 { z-index: 10 }
+
+.layer-1 {
+  height: 450px;
+  width: 80px;
+  background-color: white;
+  bottom: 0;
+  right: 60px;
+  border-radius: 50px;
+}
+
+.layer-2 {
+  height: 450px;
+  width: 80px;
+  background-color: white;
+  bottom: 0;
+  left: 60px;
+  border-radius: 50px;
+}
+
+.layer-3 {
+  height: 400px;
+  width: 85%;
+  background-color: wheat;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.layer-4 {
+  height: 350px;
+  width: 80px;
+  background-color: white;
+  bottom: 0;
+  left: 45px;
+  border-radius: 50px;
+}
+
+.layer-5 {
+  height: 300px;
+  width: 70%;
+  background-color: wheat;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 0 0 0 24px;
+}
+
+.layer-6 {
+  height: 250px;
+  width: 80px;
+  background-color: white;
+  bottom: 0;
+  right: 25px;
+  border-radius: 50px;
+}
+
+.layer-7 {
+  height: 200px;
+  width: 50%;
+  background-color: wheat;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 0 0 24px 0;
+}
+
+.layer-8 {
+  height: 150px;
+  width: 60%;
+  background-color: green;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.layer-9 {
+  height: 125px;
+  width: 40%;
+  background-color: honeydew;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 0 0 0 24px;
+}
+
+.layer-10 {
+  height: 125px;
+  width: 40%;
+  background-color: honeydew;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 0 0 24px 0;
+}
+
+@media (min-width: 1024px) {
+  .background {
+    border: 8px solid black;
+    border-radius: 32px;
+    height: 600px;
+    width: 300px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+}
