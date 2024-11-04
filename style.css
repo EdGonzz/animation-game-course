@@ -203,12 +203,30 @@ body {
   transform: rotate(-30deg);
 }
 
-.eye {
+.eyes {
   height: 8px;
   width: 8px;
   background-color: black;
   border-radius: 50% 50% 40% 40%;
   position: absolute;
+
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    height: 8px;
+  }
+  10% {
+    transform: translate(0, 4px);
+    height: 1px;
+  }
+  15% {
+    transform: translate(0, 0);
+    height: 8px;
+  }
 }
 
 .left-eye {
