@@ -400,7 +400,7 @@ body {
   width: 40px;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .layer-1 {
     right: 160px;
   }
@@ -416,25 +416,9 @@ body {
   .layer-6 {
     right: 280px;
   }
-}
+} */
 
-@media (min-width: 1024px) {
-  .layer-1 {
-    right: 60px;
-  }
-
-  .layer-2 {
-    left: 60px;
-  }
-
-  .layer-4 {
-    left: 45px;
-  }
-
-  .layer-6 {
-    right: 30px;
-  }
-
+@media (min-width: 768px) {
   .background {
     border: 8px solid black;
     border-radius: 32px;
