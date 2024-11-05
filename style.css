@@ -419,6 +419,22 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .layer-1 {
+    right: 60px;
+  }
+
+  .layer-2 {
+    left: 60px;
+  }
+
+  .layer-4 {
+    left: 45px;
+  }
+
+  .layer-6 {
+    right: 25px;
+  }
+
   .background {
     border: 8px solid black;
     border-radius: 32px;
