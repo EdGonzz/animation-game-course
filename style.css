@@ -5,6 +5,16 @@ body {
   width: 100%;
   display: grid;
   place-items: center;
+
+  counter-reset: animationGame;
+}
+
+.total-score {
+text-align: center;
+}
+
+.total-score::after {
+  content: counter(animationGame);
 }
 
 .background {
@@ -59,20 +69,66 @@ body {
   z-index: 10
 }
 
+.layer input[type="checkbox"] {
+  position: absolute;
+  appearance: none;
+  cursor: pointer;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  margin: 0;
+}
+
+.layer input[type="checkbox"]:checked {
+  counter-increment: animationGame;
+}
+
 .layer-1 {
   height: 450px;
   width: 80px;
-  background-color: white;
   bottom: 0;
   right: 60px;
+
+  animation-name: layerOne;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes layerOne {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .layer-2 {
   height: 450px;
   width: 80px;
-  background-color: white;
   bottom: 0;
   left: 60px;
+
+  animation-name: layerTwo;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes layerTwo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .layer-3 {
@@ -90,9 +146,25 @@ body {
 .layer-4 {
   height: 350px;
   width: 80px;
-  background-color: white;
   bottom: 0;
   left: 45px;
+
+  animation-name: layerFour;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes layerFour {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .layer-5 {
@@ -108,9 +180,25 @@ body {
 .layer-6 {
   height: 250px;
   width: 80px;
-  background-color: white;
   bottom: 0;
   right: 25px;
+
+  animation-name: layerSix;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes layerSix {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .layer-7 {
